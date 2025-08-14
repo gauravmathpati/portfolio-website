@@ -1,0 +1,64 @@
+/* Gradient Animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+    background: linear-gradient(270deg, #4f46e5, #06b6d4, #10b981);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}
+
+/* General Section Styling */
+.section {
+    padding: 5rem 1rem;
+}
+
+/* Navbar spacing fix */
+body {
+    padding-top: 72px; /* adjust if navbar height changes */
+}
+
+/* Card Hover Effect */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.75rem;
+}
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Shadows for better contrast on gradients */
+.text-shadow {
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Contact Form Styling */
+#contactForm input,
+#contactForm textarea {
+    border: 2px solid transparent;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #f43f5e; /* pink-500 */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 1rem;
+    }
+}
